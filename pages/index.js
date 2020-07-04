@@ -1,36 +1,25 @@
 import Head from 'next/head';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+
+import Header from '../components/header';
+import Slider from '../components/slider';
 
 export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Create Next App</title>
-				<link rel="icon" href="/favicon.ico" />
+				<title>Chirag Ramachandra</title>
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+				<link rel="manifest" href="/site.webmanifest" />
+				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+				<meta name="msapplication-TileColor" content="#ffffff" />
+				<meta name="theme-color" content="#ffffff" />
 			</Head>
 
 			<main>
-				<Navbar bg="light" expand="lg">
-					<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-					<Navbar.Toggle aria-controls="basic-navbar-nav" />
-					<Navbar.Collapse id="basic-navbar-nav">
-						<Nav className="mr-auto">
-							<Nav.Link href="#home">Home</Nav.Link>
-							<Nav.Link href="#link">Link</Nav.Link>
-							<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-								<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-								<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-								<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-							</NavDropdown>
-						</Nav>
-						<Form inline>
-							<FormControl type="text" placeholder="Search" className="mr-sm-2" />
-							<Button variant="outline-success">Search</Button>
-						</Form>
-					</Navbar.Collapse>
-				</Navbar>
+				<Header />
+				<Slider />
 			</main>
 
 			<footer>
